@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PopupItem : MonoBehaviour
 {
+
     [SerializeField] Image m_IconItem;
     [SerializeField] TextMeshProUGUI m_Title;
     [SerializeField] TextMeshProUGUI m_Infor;
