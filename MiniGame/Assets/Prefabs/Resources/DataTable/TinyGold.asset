@@ -17,6 +17,4 @@ MonoBehaviour:
   description: TinyGold
   icon: {fileID: 21300000, guid: c952b90257b62684ea155fc7b083680b, type: 3}
   value: 100
-  Item_BG:
-  - {fileID: 21300000, guid: 982ab3c13bf31d84fb7db602f6c6c4ab, type: 3}
-  - {fileID: 21300000, guid: c10817f2090c71046a5866266bac79d4, type: 3}
+  title: Logistical Gold Supplies

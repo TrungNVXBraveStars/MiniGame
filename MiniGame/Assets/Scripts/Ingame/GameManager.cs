@@ -10,7 +10,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] Button m_Button;
     [SerializeField] GameObject m_Panel;
     [SerializeField] List<PopupItem> m_PopupItems = new List<PopupItem>();
-    public List<LotteryItem> m_PrizeItems = new List<LotteryItem>();
+    List<LotteryItem> m_PrizeItems = new List<LotteryItem>();
 
     void Start()
     {
@@ -40,13 +40,11 @@ public class GameManager : Singleton<GameManager>
     IEnumerator ShowPopup()
     {
         yield return new WaitForSeconds(1);
+        m_Panel.SetActive(true);
         for (int i = 0; i < 3; i++)
         {
-            m_Panel.SetActive(true);
             m_PopupItems[i].gameObject.SetActive(true);
-            var title = m_PrizeItems[i].title;
-            var infor = "Obtain " + m_PrizeItems[i].value + " gold";
-            m_PopupItems[i].Setup(m_PrizeItems[i].Icon.sprite, title, infor);
+            m_PopupItems[i].Setup(m_PrizeItems[i].Icon.sprite, m_PrizeItems[i].title, "Obtain " + m_PrizeItems[i].value + " gold");
         }
     }
     private int[] GenerateRandomNumbers(int count, int minValue, int maxValue)

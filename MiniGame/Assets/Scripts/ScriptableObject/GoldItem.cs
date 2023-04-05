@@ -10,5 +10,6 @@ public class GoldItem : ScriptableObject
     public string description;
     public Sprite icon;
     public int value;
+    public string title;
 }
 

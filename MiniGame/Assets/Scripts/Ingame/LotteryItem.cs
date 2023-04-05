@@ -18,17 +18,8 @@ public class LotteryItem : MonoBehaviour
         int randomIndex = Random.Range(0, items.Count);
         Icon.sprite = items[randomIndex].icon;
         value = items[randomIndex].value;
+        title = items[randomIndex].title;
         backGround.sprite = list_BG[0];
-        SetupInfor(value);
-    }
-    private void SetupInfor(int value)
-    {
-        if (value == 100)
-            title = "Logical Gold Supplies";
-        else if (value == 200)
-            title = "Logical Gold Pouch Supplies";
-        else if (value == 300)
-            title = "Logical Safe Box Supplies";
     }
     public void ChangeBackGround()
     {
