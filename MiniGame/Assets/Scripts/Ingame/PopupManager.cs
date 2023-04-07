@@ -22,9 +22,9 @@ public class PopupManager : Singleton<PopupManager>
         for (int i = 0; i < m_PopupItems.Count; i++)
         {
             m_PopupItems[i].gameObject.SetActive(true);
-            var icon = GridManager.Instance.PrizeList[i].icon;
-            var title = GridManager.Instance.PrizeList[i].title;
-            var infor = "Obtain " + GridManager.Instance.PrizeList[i].value + " coin";
+            var icon = GridManager.Instance.prizeList[i].icon;
+            var title = GridManager.Instance.prizeList[i].title;
+            var infor = "Obtain " + GridManager.Instance.prizeList[i].value + " coin";
             m_PopupItems[i].Setup(icon, title, infor);
         }
     }

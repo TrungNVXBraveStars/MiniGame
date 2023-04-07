@@ -1,11 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
-    public Button m_Button;
-    public void OnNextClick()
+    [SerializeField] GridManager gridManager;
+
+    private void Start()
     {
-        m_Button.gameObject.SetActive(false);
+        Init();
+    }
+    private void Init()
+    {
+        gridManager.CellInit();
     }
 }
