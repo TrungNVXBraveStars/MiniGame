@@ -1,10 +1,8 @@
-using System;
 using DG.Tweening;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 public class GridManager : Singleton<GridManager>
 {
@@ -17,6 +15,7 @@ public class GridManager : Singleton<GridManager>
     int _normalSpin = 2;
     int _prizeIndex;
     int _prizeIndex2;
+    
     
     public void CellInit()
     {
@@ -52,15 +51,13 @@ public class GridManager : Singleton<GridManager>
     }
     private void FreeSpin()
     {
-        //List<LotteryItem> listItems = m_ListItems;
         var sequence = DOTween.Sequence();
         for (var i = 0; i < _normalSpin; i++)
         {
             foreach (var item in listItems)
             {
-                Tween scaleTween = item.highLight.DOFade(1f, 0.06f).OnComplete(() => 
-                    item.highLight.DOFade(0, 0.8f));
-                sequence.Append(scaleTween).OnComplete(() =>
+                Tween fadeTween = item.DisplayHighlight();
+                sequence.Append(fadeTween).OnComplete(() =>
                 {
                     PrizeSpin(prizeIndices[_prizeIndex]);
                     _prizeIndex++;
@@ -80,15 +77,14 @@ public class GridManager : Singleton<GridManager>
         {
             if (i == index) break;
 
-            Tween scaleTween = item.highLight.DOFade(1f, 0.06f).OnComplete(
+            var scaleTween = item.highLight.DOFade(1f, 0.06f).OnComplete(
                 () =>
                 {
                     item.highLight.DOFade(0, 0.8f);
                 });
-            sequence.Append(scaleTween)
-                .OnComplete(() =>
+            sequence.Append(scaleTween).OnComplete(() =>
                 {
-                    listItems[index].ChangeBackGround(_prizeIndex == 3 ? PopupManager.Instance.ShowUp : null);
+                    listItems[index].ChangeBackGround(_prizeIndex == prizeIndices.Length ? PopupManager.Instance.ShowUp : null);
                 });
             i++;
         }

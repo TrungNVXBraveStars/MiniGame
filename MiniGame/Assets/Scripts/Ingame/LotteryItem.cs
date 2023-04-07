@@ -6,12 +6,12 @@ using System;
 
 public class LotteryItem : MonoBehaviour
 {
-    public Image icon;
-    public Image backGround;
     public Image highLight;
-    public List<Sprite> listBg;
-    public int value;
-    public string title;
+    [SerializeField] Image icon;
+    [SerializeField] Image backGround;
+    [SerializeField] List<Sprite> listBg;
+    int value;
+    string title;
     public void Setup(GoldItem item)
     {
         icon.sprite = item.icon;
@@ -28,4 +28,14 @@ public class LotteryItem : MonoBehaviour
         });
         callback?.Invoke();
     }
+
+    public Tween DisplayHighlight()
+    {
+        var fadeTween = highLight.DOFade(1f, 0.06f).OnComplete(() =>
+        {
+            highLight.DOFade(0, 0.8f);
+        });
+        return fadeTween;
+    }
+    
 }

@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="220eabac-fb0d-48fe-8444-38ea4a9918c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MiniGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blink.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blink.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blink.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blink.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LotteryItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LotteryItem.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ingame/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ingame/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ingame/GridManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ingame/GridManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ingame/LotteryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ingame/LotteryItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ingame/PopupManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ingame/PopupManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Star.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Star.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Star.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Star.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/star.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/star.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
       <updated>1680849171295</updated>
       <workItem from="1680849178241" duration="41000" />
       <workItem from="1680849251906" duration="62000" />
-      <workItem from="1680849343914" duration="2457000" />
+      <workItem from="1680849343914" duration="7865000" />
     </task>
     <servers />
   </component>
