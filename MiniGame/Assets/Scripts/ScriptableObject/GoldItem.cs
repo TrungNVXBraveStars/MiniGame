@@ -7,7 +7,6 @@ public class GoldItem : ScriptableObject
 {
     public int id;
     public string itemName;
-    public string description;
     public Sprite icon;
     public int value;
     public string title;

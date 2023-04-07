@@ -95,7 +95,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ca1d9872a8abce04b9ac50c3f42bfe7f, type: 2}
   - {fileID: 11400000, guid: 2442d20de0c216c4db5e762539963d03, type: 2}
   - {fileID: 11400000, guid: 9ecbd050d2e912248a33c2e5fa6f3025, type: 2}
-  Icon: {fileID: 733838229273802207}
+  icon: {fileID: 733838229273802207}
   backGround: {fileID: 5069448232260323784}
   highLight: {fileID: 1194708214022939357}
   list_BG:
