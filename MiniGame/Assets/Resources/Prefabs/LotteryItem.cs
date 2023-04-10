@@ -7,9 +7,9 @@ using System;
 public class LotteryItem : MonoBehaviour
 {
     public Image highLight;
-    [SerializeField] Image icon;
-    [SerializeField] Image backGround;
-    [SerializeField] List<Sprite> listBg;
+    [SerializeField] private Image icon;
+    [SerializeField] private Image backGround;
+    [SerializeField] private List<Sprite> listBg;
     int value;
     string title;
     public void Setup(GoldItem item)

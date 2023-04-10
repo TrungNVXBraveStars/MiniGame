@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4684050282114775488}
   - component: {fileID: 4684050282114775494}
   m_Layer: 5
-  m_Name: Popup_Infor
+  m_Name: PopupItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
